@@ -7,6 +7,14 @@ const htmlPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 module.exports = {
+  /* mode: 'production',
+  entry: './src/index.js',
+  output: {
+    filename: '[name].[contenthash].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+    publicPath: 'https://microapp-trkcll-assesment.netlify.app/',
+  }, */
   mode: 'development',
   devServer: {
     static: path.join(__dirname, "dist"),
